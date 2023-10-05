@@ -2,11 +2,11 @@
 const boxes = document.querySelectorAll('.box');
 
 const newImages = [
-    '../img/workSwap.jpg',
-    '../img/mySkillsSwap.jpg',
-    '../img/blogSwap.jpg',
-    '../img/contactSwap.jpg',
-    '../img/aboutMeSwap.png'
+    'img/workSwap.jpg',
+    'img/mySkillsSwap.jpg',
+    'img/blogSwap.jpg',
+    'img/contactSwap.jpg',
+    'img/aboutMeSwap.png'
 ];
 
 function changeImageOnMouseEnter(box, newImage) {
