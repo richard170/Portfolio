@@ -23,6 +23,7 @@ body {
 
 
 .box{
+    border-radius: 2%;
     position: relative;
     background: var(--img) center center;
     background-size: cover;
