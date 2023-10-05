@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Richard Lucas</title>
     <link rel="stylesheet" href="../character-style/style.css">
+    
 </head>
 
 <body>
@@ -17,31 +18,6 @@
     </div>
 </body>
 
-<script>
-    const boxes = document.querySelectorAll('.box');
-    
-    const newImages = [
-        '../character-img/workSwap.jpg',
-        '../character-img/mySkillsSwap.jpg',
-        '../character-img/blogSwap.jpg',
-        '../character-img/contactSwap.jpg',
-        '../character-img/aboutMeSwap.png'
-    ];
-   
-    function changeImageOnMouseEnter(box, newImage) {
-        box.addEventListener('mouseover', () => {
-            box.style.backgroundImage = `url(${newImage})`;
-        });
-
-        box.addEventListener('mouseout', () => {
-            box.style.backgroundImage = 'var(--img)';
-        });
-    }
-
-    boxes.forEach((box, index) => {
-        changeImageOnMouseEnter(box, newImages[index]);
-    });
-
-</script>
+<script src="script/scriptIndex.js"></script>
 
 </html>
