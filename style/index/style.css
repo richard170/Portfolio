@@ -8,11 +8,13 @@
     box-sizing: border-box;
 }
 
-.conteudo {
+.conteudo {    
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinhe o conteúdo no topo da div .conteudo */
-    height: 100vh;
+    align-items: center;
+    min-height: 100vh; /* Defina uma altura mínima de 100% da viewport */
+    padding: 20px; /* Adicione preenchimento para espaço ao redor do conteúdo */
+    box-sizing: border-box;
 }
 h1{
     
@@ -169,11 +171,17 @@ nav ul li a {
     .email a i {
         font-size: 16px; /* Define o tamanho da fonte do ícone para torná-lo visível */
     }
-    h1, h4, p {
-        font-size: 1.5em; /* Reduza o tamanho da fonte para telas menores */
+    h1 {
+        font-size: 25px; /* Limita o espaço superior a 10% do topo da página quando a tela estiver menor que 1234px */
+    }
+    h4{
+        font-size: 10px;
+    }
+    p{
+        font-size: 15px;
     }
     .responsive-text {
-        font-size: 2vh; /* Defina o tamanho de fonte como 2% da altura da viewport */
+        font-size: 15px; /* Defina o tamanho de fonte como 2% da altura da viewport */
         line-height: 1.5em; /* Ajuste o espaçamento entre as linhas conforme necessário */
     }
 }
@@ -218,7 +226,13 @@ nav ul li a {
         display: none;
     }
     .nome-container {
-        font-size: 10px; /* Defina o tamanho de fonte como 2% da altura da viewport */
+        line-height: 1.2em;
+        font-size: 3vw;
+    }
+
+    .conteudo {
+        min-height: auto; 
+        margin-top: 20%;/* Remova a altura mínima para permitir o conteúdo se ajustar ao tamanho da tela */
     }
 
 }
