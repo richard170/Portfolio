@@ -144,6 +144,40 @@ nav ul li a {
     align-items: center;
 }
 
+@media screen and (max-width: 1200px) {
+    
+    h1 {
+        font-size: 30px; /* Limita o espaço superior a 10% do topo da página quando a tela estiver menor que 1234px */
+    }
+    h4{
+        font-size: 10px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .responsive-text {
+        font-size: 2vh; /* Defina o tamanho de fonte como 2% da altura da viewport */
+        line-height: 1.5em; /* Ajuste o espaçamento entre as linhas conforme necessário */
+    }
+}
+
+@media screen and (max-width:992px) {
+    .email a {
+        font-size: 0; /* Define o tamanho da fonte como zero, ocultando o texto */
+    }
+
+    .email a i {
+        font-size: 16px; /* Define o tamanho da fonte do ícone para torná-lo visível */
+    }
+    h1, h4, p {
+        font-size: 1.5em; /* Reduza o tamanho da fonte para telas menores */
+    }
+    .responsive-text {
+        font-size: 2vh; /* Defina o tamanho de fonte como 2% da altura da viewport */
+        line-height: 1.5em; /* Ajuste o espaçamento entre as linhas conforme necessário */
+    }
+}
+
 @media screen and (max-width:600px) {
 
     label {
@@ -180,44 +214,11 @@ nav ul li a {
         visibility: visible;
         opacity: 1;
     }
-
-    
-
-}
-
-@media screen and (max-width: 1234px) {
-    
-    h1 {
-        font-size: 30px; /* Limita o espaço superior a 10% do topo da página quando a tela estiver menor que 1234px */
+    .imagem-container{
+        display: none;
     }
-    h4{
-        font-size: 10px;
-    }
-    p{
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width:880px) {
-    .email a {
-        font-size: 0; /* Define o tamanho da fonte como zero, ocultando o texto */
+    .nome-container {
+        font-size: 10px; /* Defina o tamanho de fonte como 2% da altura da viewport */
     }
 
-    .email a i {
-        font-size: 16px; /* Define o tamanho da fonte do ícone para torná-lo visível */
-    }
-}
-
-/* Media query para telas menores que 768px */
-@media screen and (max-width: 768px) {
-    h1, h4, p {
-        font-size: 1.5em; /* Reduza o tamanho da fonte para telas menores */
-    }
-}
-
-/* Media query para telas menores que 480px */
-@media screen and (max-width: 716px) {
-    h1, h4, p {
-        font-size: 0;
-    }
 }
