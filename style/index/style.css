@@ -230,9 +230,16 @@ nav ul li a {
         font-size: 3vw;
     }
 
+}
+
+@media screen and (max-width: 480px) {
     .conteudo {
-        min-height: auto; 
-        margin-top: 20%;/* Remova a altura mínima para permitir o conteúdo se ajustar ao tamanho da tela */
+        margin-left: -200px;
+        min-width: 100vh;
     }
 
+    h1, h4, p {
+        text-align: justify;
+        font-size: 18px; /* Reduza o tamanho da fonte para dispositivos menores */
+    }
 }
