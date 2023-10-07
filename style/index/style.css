@@ -8,10 +8,6 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow: hidden;
-}
-
 .conteudo {
     display: flex;
     justify-content: center;
