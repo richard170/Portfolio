@@ -28,19 +28,6 @@ p{
     margin-left: 30%;
 }
 
-/* Media query para telas menores que 768px */
-@media screen and (max-width: 768px) {
-    h1, h4, p {
-        font-size: 1.5em; /* Reduza o tamanho da fonte para telas menores */
-    }
-}
-
-/* Media query para telas menores que 480px */
-@media screen and (max-width: 480px) {
-    h1, h4, p {
-        font-size: 1.2em; /* Reduza ainda mais o tamanho da fonte para telas pequenas */
-    }
-}
 .nome-container {
     text-align: left;
     padding: 20px; /* Adicione preenchimento para criar espaço ao redor do texto */
@@ -100,17 +87,16 @@ a {
 }
 
 header {
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    position: relative;
+    z-index: 100; /* Certifique-se de que a barra de navegação esteja acima de outros elementos */
 }
-
-
-
-
 
 label {
     display: none;
@@ -220,8 +206,18 @@ nav ul li a {
     .email a i {
         font-size: 16px; /* Define o tamanho da fonte do ícone para torná-lo visível */
     }
+}
 
-    .nome-container {
-        margin-top: 10%; /* Limita o espaço superior a 10% do topo da página quando a tela estiver menor que 1000px */
+/* Media query para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    h1, h4, p {
+        font-size: 1.5em; /* Reduza o tamanho da fonte para telas menores */
+    }
+}
+
+/* Media query para telas menores que 480px */
+@media screen and (max-width: 716px) {
+    h1, h4, p {
+        font-size: 0;
     }
 }

@@ -18,7 +18,7 @@
             </a>
         </div>
 
-        <div class="email">
+        <div id="email-link" class="email">
             <!-- Use o ícone de envelope sólido -->
             <a class="navbar-brand" href="mailto:lucasrichard@gmail.com">
                 <i class="fas fa-envelope"></i>
@@ -68,9 +68,25 @@
                 recusandae! Repellendus rerum ratione odit!</p>
         </div>
         <div class="imagem-container">
-            <img src="img/fotoIndex.png" alt="MinhaFoto">
+            <img class="img-container" src="img/fotoIndex.png" alt="MinhaFoto">
         </div>
     </div>
 </body>
+<script>
+    var emailLink = document.getElementById("email-link");
+
+    // Adicione um ouvinte de evento para a rolagem da página
+    window.addEventListener("scroll", function () {
+        // Verifique se a página foi rolada para baixo o suficiente (por exemplo, 100 pixels)
+        if (window.scrollY > 100) {
+            // Se a página foi rolada para baixo, oculte o elemento
+            emailLink.style.display = "none";
+        } else {
+            // Se a página estiver no topo, mostre o elemento
+            emailLink.style.display = "block"; // Ou defina como "initial" se desejar usar o estilo original
+        }
+    });
+
+</script>
 
 </html>
