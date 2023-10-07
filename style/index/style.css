@@ -27,6 +27,20 @@ p{
     font-size: 20px;
     margin-left: 30%;
 }
+
+/* Media query para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    h1, h4, p {
+        font-size: 1.5em; /* Reduza o tamanho da fonte para telas menores */
+    }
+}
+
+/* Media query para telas menores que 480px */
+@media screen and (max-width: 480px) {
+    h1, h4, p {
+        font-size: 1.2em; /* Reduza ainda mais o tamanho da fonte para telas pequenas */
+    }
+}
 .nome-container {
     text-align: left;
     padding: 20px; /* Adicione preenchimento para criar espaço ao redor do texto */
