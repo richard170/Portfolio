@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/index/style.css">
+</head>
+
+<body>
+    <!-- Botão para escolher a cor de fundo -->
+    
+    
+    <div class="container">
+        <!-- Resto do seu conteúdo -->
+    </div>
+
+    <script>
+        
+        function changeBackgroundColor() {
+            const colorPicker = document.getElementById('colorPicker');
+            const selectedColor = colorPicker.value;
+            document.body.style.backgroundColor = selectedColor;
+        }
+
+        // Adicione um ouvinte de eventos para o botão
+        const colorPicker = document.getElementById('colorPicker');
+        colorPicker.addEventListener('input', changeBackgroundColor);
+    </script>
+    <script src="script/index/scriptSwapPage.js"></script>
+</body>
+
+</html>

@@ -4,22 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard Lucas M.</title>
-    <link rel="icon" href="img/favicon-16x16.png" type="image/x-icon">
+    <title>Seu Nome</title>
     <link rel="stylesheet" href="style/index/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="box box-1" id="box-1" style="--img: url(img/work.jpg);" data-text="add"></div>
-        <div class="box box-2" id="box-2" style="--img: url(img/mySkills.jpg);" data-text="add"></div>
-        <div class="box box-3" id="box-3" style="--img: url(img/blog.jpg);" data-text="add"></div>
-        <div class="box box-4" id="box-4" style="--img: url(img/contact.jpg);" data-text="add"></div>
-        <div class="box box-5" id="box-5" style="--img: url(img/aboutMe.jpg);" data-text="add"></div>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <h1>NM</h1>
+            </a>
+        </div>
+
+        <div class="email">
+            <!-- Use o ícone de envelope sólido -->
+            <a class="navbar-brand" href="mailto:seuemail@gmail.com">
+                <i class="fas fa-envelope"></i>
+                seuemail@gmail.com
+            </a>
+        </div>
+
+        <input type="checkbox" id="menu" hidden>
+        <label for="menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <nav>
+            <label for="menu">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <nav class="vertical-nav">
+            <ul>
+                <li><a class="socialMid" href="https://www.linkedin.com/in/richardlucasmarques/"
+                        style="--color: #4267b6"><i class="fa-brands fa-linkedin-in fa-2x"></i></a></li>
+                <li><a class="socialMid" href="https://github.com/richard170" style="--color: #bd2c00"><i
+                            class="fa-brands fa-github fa-2x"></i></a></li>
+                <li><a class="socialMid" href="https://www.instagram.com/richard170/" style="--color: #E1306C"><i
+                            class="fa-brands fa-instagram fa-2x"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="conteudo">
+        <div class="nome-container">
+            <h1>Seu Nome</h1>
+            <h4>DESENVOLVEDOR</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, nostrum officiis perspiciatis unde eos
+                obcaecati incidunt voluptatem distinctio veritatis, rerum magnam temporibus ut aut. Recusandae itaque
+                sit in tempora corporis.</p></br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aspernatur, libero beatae natus,
+                iure iste molestias pariatur dolorem officia consequuntur veniam numquam provident quisquam temporibus
+                recusandae! Repellendus rerum ratione odit!</p></br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aspernatur, libero beatae natus,
+                iure iste molestias pariatur dolorem officia consequuntur veniam numquam provident quisquam temporibus
+                recusandae! Repellendus rerum ratione odit!</p>
+            </br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, aspernatur, libero beatae natus,
+                iure iste molestias pariatur dolorem officia consequuntur veniam numquam provident quisquam temporibus
+                recusandae! Repellendus rerum ratione odit!</p>
+        </div>
+        <div class="imagem-container">
+            <img src="img/fotoIndex.png" alt="MinhaFoto">
+        </div>
     </div>
 </body>
-
-<script src="script/index/scriptIndex.js"></script>
-<script src="script/index/scriptSwapPage.js"></script>
 
 </html>

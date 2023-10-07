@@ -1,90 +1,221 @@
-@import url(https://fonts.googleapis.com/css2?family=Figtree&display=swap);
+/* Richard Portfolio */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background: #5e5c5c;
+    overflow: hidden;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhe o conteúdo no topo da div .conteudo */
+    height: 100vh;
+}
+h1{
+    
+    margin-left: 30%;
+    font-size: 50px;
+}
+h4{
+    margin-left: 30%;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 20px;
+    margin-left: 30%;
+}
+.nome-container {
+    text-align: left;
+    padding: 20px; /* Adicione preenchimento para criar espaço ao redor do texto */
+    max-width: 50%; /* Defina a largura máxima para o bloco de texto à esquerda */
+    box-sizing: border-box; /* Garanta que o preenchimento e a largura máxima não excedam o espaço disponível */
+    height: 100vh; /* Defina a altura da div nome-container como 20% da altura da viewport */
+    display: flex; /* Ative o modelo de layout flex para centralizar verticalmente o conteúdo */
+    flex-direction: column; /* Alinhe o conteúdo verticalmente */
+    justify-content: center; /* Centralize verticalmente o conteúdo na div */
+    
+}
+
+.imagem-container {
+    text-align: right;
+    max-width: 50%; /* Defina a largura máxima para a imagem à direita */
+    box-sizing: border-box; /* Garanta que a largura máxima não exceda o espaço disponível */
+}
+
+.imagem-container img {
+    text-align: right;
+    width: 100%; /* A imagem ocupará 100% da largura disponível do contêiner */
+    height: auto; /* Mantenha a proporção da imagem */
+}
+
+/* Restante do seu CSS */
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.socialMid {
+    margin: 0 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: #fff;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.5s;
+    background: rgba(0, 0, 0, 0);
+    color: var(--color);
+    font-size: 1em;
+}
+
+.socialMid:hover {
+    background: var(--color);
+    color: #050801;
+    box-shadow: 0 0 5px var(--color),
+        0 0 25px var(--color),
+        0 0 50px var(--color),
+        0 0 200px var(--color);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
+
+.email {
+    margin-left: -35%;
+
+    /* Adicione margem à esquerda para aproximar o e-mail do "RL" */
+}
+
+
+label {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+.vertical-nav {
+    position: fixed;
+    left: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.vertical-nav ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    min-height: 100vh;
 }
 
-.container {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 1em;
-    width: 800px;
-    height: 500px;
-    font-family: "Figtree", sans-serif;
-    transition: all 400ms;
-
+.vertical-nav li {
+    margin: 10px 0;
+    text-align: center;
 }
 
-
-.box {
-    border-radius: 2%;
-    position: relative;
-    background: var(--img) center center;
-    background-size: cover;
-    transition: all 400ms;
+.vertical-nav a {
+    color: #000;
+    text-decoration: none;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.box::after {
-    content: attr(data-text);
-    position: absolute;
-    bottom: 20px;
-    background: #000;
-    color: #fff;
-    padding: 10px 10px 10px 14px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    transform: translateY(60px);
-    opacity: 0;
-    transition: all 400ms;
+@media screen and (max-width:600px) {
+
+    label {
+        display: block;
+    }
+
+    nav {
+        width: 150px;
+        position: absolute;
+        background: #ffffff;
+        top: 10px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        visibility: hidden;
+        opacity: 0;
+        transform: 0.3s ease;
+    }
+
+    nav ul li a,
+    nav label {
+        color: #000000;
+    }
+
+    nav label {
+        text-align: right;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    input:checked~nav {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    
+
 }
 
-.container:hover .box {
-    filter: grayscale(100%) opacity(24%);
+@media screen and (max-width:880px) {
+    .email a {
+        font-size: 0; /* Define o tamanho da fonte como zero, ocultando o texto */
+    }
+
+    .email a i {
+        font-size: 16px; /* Define o tamanho da fonte do ícone para torná-lo visível */
+    }
+
+    .nome-container {
+        margin-top: 10%; /* Limita o espaço superior a 10% do topo da página quando a tela estiver menor que 1000px */
+    }
 }
 
-.box:hover::after {
-    transform: translateY(0);
-    opacity: 1;
-    transition-delay: 400ms;
-}
-
-.container .box:hover {
-    filter: grayscale(0%) opacity(100%);
-}
-
-.container:has(.box-1:hover) {
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-}
-
-.container:has(.box-2:hover) {
-    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
-}
-
-.container:has(.box-3:hover) {
-    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
-}
-
-.container:has(.box-4:hover) {
-    grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
-}
-
-.container:has(.box-5:hover) {
-    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
-}
-
-.box:nth-child(odd) {
-    transform: translateY(-16px);
-}
-
-.box:nth-child(even) {
-    transform: translateY(16px);
+@media screen and (max-width: 1234px) {
+    
+    h1 {
+        font-size: 30px; /* Limita o espaço superior a 10% do topo da página quando a tela estiver menor que 1234px */
+    }
+    h4{
+        font-size: 10px;
+    }
+    p{
+        font-size: 15px;
+    }
 }
