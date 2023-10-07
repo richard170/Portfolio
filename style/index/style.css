@@ -99,11 +99,7 @@ header {
 }
 
 
-.email {
-    margin-left: -35%;
 
-    /* Adicione margem à esquerda para aproximar o e-mail do "RL" */
-}
 
 
 label {
@@ -193,6 +189,19 @@ nav ul li a {
 
 }
 
+@media screen and (max-width: 1234px) {
+    
+    h1 {
+        font-size: 30px; /* Limita o espaço superior a 10% do topo da página quando a tela estiver menor que 1234px */
+    }
+    h4{
+        font-size: 10px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width:880px) {
     .email a {
         font-size: 0; /* Define o tamanho da fonte como zero, ocultando o texto */
@@ -204,18 +213,5 @@ nav ul li a {
 
     .nome-container {
         margin-top: 10%; /* Limita o espaço superior a 10% do topo da página quando a tela estiver menor que 1000px */
-    }
-}
-
-@media screen and (max-width: 1234px) {
-    
-    h1 {
-        font-size: 30px; /* Limita o espaço superior a 10% do topo da página quando a tela estiver menor que 1234px */
-    }
-    h4{
-        font-size: 10px;
-    }
-    p{
-        font-size: 15px;
     }
 }
