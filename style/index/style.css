@@ -235,7 +235,7 @@ nav ul li a {
 @media screen and (max-width: 480px) {
     .conteudo div{
         margin-top: -45%;
-        margin-left: -30%;
+        margin-left: -35%;
         max-width: 100vh;
     }
 
